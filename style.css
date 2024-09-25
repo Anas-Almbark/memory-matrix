@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --first-color: #78574e;
+  --second-color: #5d443d;
+  --third-color: #4dbcb6;
+  --span-color: #86716c;
+  --border-color: #2f221e;
+}
+body {
+  background-color: var(--first-color);
+}
+.container {
+  padding: 40px;
+}
+.container .info-progress-game span {
+  background-color: var(--span-color);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 11px 10px 20px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+.container .content-game {
+  background-color: var(--border-color);
+  padding: 16px;
+  display: grid;
+  justify-content: center;
+  width: 50%;
+  height: calc(100vh - 120px);
+  gap: 10px;
+  margin: auto;
+  border-radius: 8px;
+}
+.container .content-game .playerName {
+  font-size: 2rem;
+  color: #fff;
+  align-self: center;
+}
+.container .content-game span {
+  background-color: var(--second-color);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+.container .content-game span.active {
+  background-color: var(--third-color);
+}
